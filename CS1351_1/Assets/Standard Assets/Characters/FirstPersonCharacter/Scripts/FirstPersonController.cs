@@ -92,7 +92,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_NextStep = m_StepCycle + .5f;
         }
 
-
+        
         private void FixedUpdate()
         {
             float speed;
@@ -133,6 +133,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_MouseLook.UpdateCursorLock();
         }
+        
 
 
         private void PlayJumpSound()

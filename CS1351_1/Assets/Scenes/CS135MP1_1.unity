@@ -181,6 +181,10 @@ PrefabInstance:
       value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_SlopeLimit
       value: 45
       objectReference: {fileID: 0}
@@ -862,6 +866,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 69548976}
   m_PrefabAsset: {fileID: 0}
+--- !u!143 &654035746 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 69548976}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &654035748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,6 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 578e2c6957849c145b8faa62bdc5dc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 654035746}
 --- !u!4 &833216574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400348, guid: 6788413dff62c534d8ca610faef3c7a2,

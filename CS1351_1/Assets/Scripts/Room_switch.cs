@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Room_switch : MonoBehaviour
 {
-    
+    public CharacterController controller = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +16,15 @@ public class Room_switch : MonoBehaviour
     {
         if (Input.GetKeyDown("2"))
         {
-            this.transform.position = new Vector3(50,1,0);
-            
+            controller.enabled = false;
+            this.transform.position = new Vector3(50,-6,0);
+            controller.enabled = true;
         }
         if (Input.GetKeyDown("1"))
         {
+            controller.enabled = false;
             this.transform.position = new Vector3(0, 1, 0);
-
+            controller.enabled = true;
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
