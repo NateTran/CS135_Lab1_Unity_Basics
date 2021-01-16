@@ -26,7 +26,7 @@ public class Room_switch : MonoBehaviour
             this.transform.position = new Vector3(0, 1, 0);
             controller.enabled = true;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.B))
         {
          #if UNITY_EDITOR
            UnityEditor.EditorApplication.isPlaying = false;
